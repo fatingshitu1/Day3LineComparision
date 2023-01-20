@@ -10,8 +10,8 @@ public class LineComparision {
         int x2 = 4;
         int y1 = 3;
         int y2 = 6;
-        int length = (int) Math.sqrt((x2 - x1)) * 2 + (y2 - y1) * 2);
-        System.out.println("length of 1st line is" + length);
+        int length = (int) Math.sqrt((x2 - x1)) * 2 + (y2 - y1) * 2;
+        System.out.println("length of 1st line is " + length);
 
         // calculating Length1 of y
         // initialization of Variables
@@ -19,8 +19,19 @@ public class LineComparision {
         int a2 = 4;
         int b1 = 3;
         int b2 = 6;
-        int length1 = (int) Math.sqrt((a2 - a1)) * 2 + (b2 - b1) * 2);
-        System.out.println("length of 1st line is" + length);
+        int length1 = (int) Math.sqrt((a2 - a1)) * 2 + (b2 - b1) * 2;
+        System.out.println("length of 2nd line is " + length);
+
+        // UC3 to check the equal,greater or less than other line
+        int result = length.CompareTo(length1);
+        if (result>0){
+            System.out.println("Length is greater than length1");
+        } else if (result < 0){
+            System.out.println("length is less than Length1");
+        }else {
+            System.out.println("Both lines are equal");
+        }
     }
 }
+
 
