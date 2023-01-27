@@ -2,7 +2,7 @@ package com.bridgelabz.linecomparision;
 
 public class LineComparision {
     public static void main(String[] args) {
-        System.out.println("Welcome to line Comparision Computation Program");
+        System.out.println("Welcome to line Comparison Computation Program");
         //UC1 Calculation of length
         // Calculating Length of x
         // initialization of Variables
@@ -10,7 +10,7 @@ public class LineComparision {
         int x2 = 4;
         int y1 = 3;
         int y2 = 6;
-        int length = (int) Math.sqrt((x2 - x1)) * 2 + (y2 - y1) * 2;
+        Double length = (double) Math.sqrt((x2 - x1)) * 2 + (y2 - y1) * 2;
         System.out.println("length of 1st line is " + length);
 
         // calculating Length1 of y
@@ -19,11 +19,11 @@ public class LineComparision {
         int a2 = 4;
         int b1 = 3;
         int b2 = 6;
-        int length1 = (int) Math.sqrt((a2 - a1)) * 2 + (b2 - b1) * 2;
+        Double length1 = (Double) Math.sqrt((a2 - a1)) * 2 + (b2 - b1) * 2;
         System.out.println("length of 2nd line is " + length);
 
         // UC3 to check the equal,greater or less than other line
-        int result = length.CompareTo(length1);
+        int result = length.compareTo(length1);
         if (result>0){
             System.out.println("Length is greater than length1");
         } else if (result < 0){
@@ -33,5 +33,14 @@ public class LineComparision {
         }
     }
 }
+
+
+
+
+
+
+
+
+
 
 
